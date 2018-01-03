@@ -1,0 +1,25 @@
+{
+  "name": "SiafplusPDV",
+  "version": "1.0.0",
+  "description": "PDV do SiafPlus",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/electron .",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "build": {
+    "appId": "SiafplusPDV",
+    "win": {
+      "target": "NSIS",
+      "icon": "build/icon.ico"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-builder": "^19.50.0",
+    "electron-prebuilt": "^1.2.7",
+    "electron-builder-squirrel-windows": "^19.51.0"
+  }
+}
